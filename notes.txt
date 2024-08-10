@@ -1,0 +1,138 @@
+06-08-2024:
+
+BASIC CODING STANDARDS
+    Meaningful Names
+        Naming Conventions
+            UPPERCASE
+            lowercase
+            snake_case
+            dash-case
+            lowerCamelCase
+            UpperCamelCase
+
+
+Web Server
+    default.htm
+    detault.html
+    index.htm
+    index.html
+    home.html
+
+HTML TAGS
+    <TAGNAME> => opening tag
+        ....
+    </TAGNAME> => closing tag
+
+    Types:
+        Paired Tag
+            <NAME>
+                ...
+            </NAME>
+        Unpaired Tag or Self Closing Tag
+            <NAME>
+                or
+            <NAME />
+
+
+07-08-2024:
+    HTML Attributes
+        Types:
+            Paired Attributes
+            Unpaired Attributes
+
+        Classification
+            3 Types:
+                Core
+                    id
+                    class
+                    style
+                    title
+                Generic
+                Custom
+                    data-
+
+Path
+    Absolute
+        C:\Users\SRI NANOO\Pictures\Capture.png
+    Relative
+
+TAGS Classification
+    Block
+    Inline
+
+09-08-2024:
+
+    form
+        HTTP GET
+            (default)
+                pattern of URL
+                    https://example.com/?key=value&key1=value1&...
+                        querystring
+        HTTP POST
+            form body
+
+    Forms
+        - Application
+        - Survey
+        - Registration
+        - Login
+        - Feedback
+        - Enrollment
+        - Verification
+        - Request
+        - Quiz
+        - Profile
+        - Newsletter
+        - Train / Flight / Bus
+        - Checkin / Checkout
+        - Delivery
+        - Bank Passbook
+        - Order
+        - Contact
+        - Membership
+        - Donation
+        - Chat
+        - Insurance
+        - Events
+        - Appointment
+        - Evaluation
+        - Pan Card
+        - Aadhaar Card
+        - Concern
+        - Referral
+        - Complaint
+        - Leave
+        - Acknowledge
+        - OD
+        - Subscriptionn
+        - Cancellation
+        - Deposit
+        - Withdrawal
+        - DD
+        - Transaction
+        - Payment
+        - Query
+        - Intake
+        - Dismissal / Suspension
+        - Admission
+        - No Due
+        - Matrimony
+        - Divorce
+        - Birth / Certificate
+        - Eligibility
+        - Quota
+        - Scholarship
+        - EMI
+        - Voting
+        - Violation
+        - Community
+        - Councelling
+        - OP
+        - Therapy
+        - Revaluation
+        - Choice Filling
+        - Detention
+        - Internship
+        - Implant
+        - Declaration
+            = 63 Forms
