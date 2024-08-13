@@ -136,3 +136,53 @@ TAGS Classification
         - Implant
         - Declaration
             = 63 Forms
+
+
+13-08-2024
+
+    CSS Measurements
+        px
+        %
+
+        em
+        rem
+
+        vh
+        vw
+
+        pt
+        pc
+
+        mm
+        cm
+        in
+
+    What is the difference between:
+        em vs rem
+        initial vs inherit
+        vh vs vw
+
+    Colors:
+        rgb (red + green + blue)
+            0-255 + 0-255 + 0-255
+
+        rgba (red + green + blue + alpha) aka opacity or tranparency
+            0-255 + 0-255 + 0-255 + 0-1
+
+        hex codes
+            #000000
+
+            values
+                0-9
+                a-f
+
+                #123456
+                #abcdef
+                #a1b2c3
+
+            rbg(255, 255, 255)
+            rgb(0, 0, 0)
+
+            #ffffff
+            #fff
+            #abc
