@@ -186,3 +186,26 @@ TAGS Classification
             #ffffff
             #fff
             #abc
+
+19-08-2024
+
+    index.html (slider - 1kb)
+    about.html
+    contact.html (form - 1kb) 
+    portfolio.html
+    services.html
+
+    style.css (5 kb + 1 kb + 1 kb) = 7kb
+
+Font File formats
+    ttf
+    otf
+    woff
+    eot
+    svg
+
+<div>
+    ::before => prepend() in JS
+        ...
+    ::after => append() in JS
+</div>
