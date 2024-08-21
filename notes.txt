@@ -209,3 +209,38 @@ Font File formats
         ...
     ::after => append() in JS
 </div>
+
+
+21-08-2024
+
+Responsiveness
+    - Screen Sizes
+        - Guided Screen Sizes
+            576px
+            768px
+            992px
+            1200px
+            1400px
+        - Custom Screen Sizes
+            500px
+            800px
+            1000px
+            1200px
+            1400px
+
+        - Breakpoints
+            xs = <576px or <500px
+            sm = <768px or <800px
+            md = <992px or <1000px
+            lg = <1200px
+            xl = <1400px
+            xxl = >1400px
+
+        - < and > in CSS
+            < = max-width
+            > = min-width
+
+        - Syntax:
+            @media only screen and (max-width: 576px) {
+                
+            }
