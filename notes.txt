@@ -244,3 +244,55 @@ Responsiveness
             @media only screen and (max-width: 576px) {
                 
             }
+
+22-08-2024
+
+    Positioning
+        1st Scenario
+            all static
+                spacing + direction
+                direction
+        2nd Scenario
+            all relative
+                spacing + direction
+                direction
+        3rd Scenario
+            all absolute
+                spacing + direction
+                direction
+        4th Scenario
+            parent container is static
+                at least 3 - 4 child containers it will be static
+                    spacing + direction
+                    direction
+        5th Scenario
+            parent container is relative
+                at least 3 - 4 child containers it will be static
+                    spacing + direction
+                    direction
+
+                at least 3 - 4 child containers it will be relative
+                    spacing + direction
+                    direction
+
+                at least 3 - 4 child containers some containers are static and are relative
+                    spacing + direction
+                    direction
+        
+        6th Scenario
+            parent container is absolute
+                at least 3 - 4 child containers it will be static
+                    spacing + direction
+                    direction
+
+                at least 3 - 4 child containers it will be relative
+                    spacing + direction
+                    direction
+
+                at least 3 - 4 child containers it will be absolute
+                    spacing + direction
+                    direction
+
+                at least 3 - 4 child containers some containers are static and are relative and absolute
+                    spacing + direction
+                    direction

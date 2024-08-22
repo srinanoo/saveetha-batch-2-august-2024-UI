@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+        }
+        img {
+            max-width: 100%;
+        }
+        .div1 {
+            background-color: red;
+        }
+        .div2 {
+            background-color: yellow;
+        }
+        .div3 {
+            background-color: green;
+        }
+        .div4 {
+            background-color: blue;
+        }
+
+        /* nav {
+            background-color: red;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            padding: 10px 5px;
+            background-color: yellow;
+        }
+        nav ul li:hover {
+            background-color: aqua;
+            cursor: pointer;
+        }
+        nav ul li:hover .submenu {
+            display: block;
+        } */
+
+        nav {
+            background-color: red;
+        
+            & ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: flex;
+            
+                & li {
+                    padding: 10px 5px;
+                    background-color: yellow;
+                
+                    &:hover {
+                        background-color: aqua;
+                        cursor: pointer;
+                    
+                        & .submenu {
+                            display: block;
+                        }
+                    } 
+                }
+            }
+        }
+        .submenu {
+            position: absolute;
+            background: gray;
+            color: white;
+            padding: 5px;
+            margin-left: -5px;
+            margin-top: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <div class="div1">Div 1 Container</div>
+    <div class="div2">Div 2 Container</div>
+    <div class="div3">Div 3 Container</div>
+    <div class="div4">Div 4 Container</div> -->
+
+    <nav>
+        <ul>
+            <li>Menu 1</li>
+            <li>Menu 2</li>
+            <li>Menu 3
+                <div class="submenu">
+                    <div>Submenu 1</div>
+                    <div>Submenu 2</div>
+                    <div>Submenu 3</div>
+                    <div>Submenu 4</div>
+                    <div>Submenu 5</div>
+                    <div>Submenu 6</div>
+                </div>
+            </li>
+            <li>Menu 4</li>
+            <li>Menu 5</li>
+        </ul>
+    </nav>
+    
+</body>
+</html>
