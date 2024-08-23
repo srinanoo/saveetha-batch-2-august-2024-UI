@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+        }
+        img {
+            max-width: 100%;
+        }
+        /* .row {
+            background-color: purple;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        .row div {
+            background-color: pink;
+        } */
+
+        .header {
+            grid-area: header;
+        }
+        .nav {
+            grid-area: nav;
+        }
+        .main {
+            grid-area: main;
+        }
+        .aside {
+            grid-area: aside;
+        }
+        .footer {
+            grid-area: footer;
+        }
+        .row {
+            background-color: purple;
+            display: grid;
+            grid-template-areas: 
+                'header header header header header header'
+                'nav nav nav nav nav nav'
+                'main main main main aside aside'
+                'footer footer footer footer footer footer';
+        }
+        .row div {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <div class="row">
+        <div>Div 1</div>
+        <div>Div 2</div>
+        <div>Div 3</div>
+        <div>Div 4</div>
+        <div>Div 5</div>
+        <div>Div 6</div>
+        <div>Div 7</div>
+        <div>Div 8</div>
+        <div>Div 9</div>
+        <div>Div 10</div>
+        <div>Div 11</div>
+        <div>Div 12</div>
+    </div> -->
+
+    <div class="row">
+        <div class="header">Header</div>
+        <div class="nav">Nav</div>
+        <div class="main">Main</div>
+        <div class="aside">Aside</div>
+        <div class="footer">Footer</div>
+    </div>
+    
+</body>
+</html>
