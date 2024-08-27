@@ -94,7 +94,7 @@
             margin-top: 40px;
         } */
 
-        .flip-box {
+        /* .flip-box {
             width: 150px;
             height: 150px;
             border: solid;;
@@ -110,6 +110,34 @@
         }
         .flip-box:hover p {
             z-index: 1;
+        } */
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .left {
+            width: 30%;
+            background-color: yellow;
+            position: fixed;
+            height: 100vh;
+        }
+        .right {
+            width: 70%;
+            background-color: pink;
+            margin-left: 30%;
+        }
+
+        .top {
+            position: fixed;
+            width: 30px;
+            right: 0;
+            bottom: 0;
+        }
+        .sticky {
+            background-color: green;
+            position: sticky;
+            top: 0;
         }
     </style>
 </head>
@@ -145,9 +173,33 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div> -->
 
-    <div class="flip-box">
+    <!-- <div class="flip-box">
         <img src="images/background.jpeg" alt="">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div> -->
+
+
+    <img src="images/arrow2.png" alt="" class="top">
+    <div class="container">
+        <div class="left">
+            Left Container
+        </div>
+        <div class="right">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit eius earum nesciunt quod voluptatum laboriosam magni dignissimos, expedita a. Iure nisi deleniti consequatur. Laboriosam iste perferendis ex vel itaque cupiditate.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit eius earum nesciunt quod voluptatum laboriosam magni dignissimos, expedita a. Iure nisi deleniti consequatur. Laboriosam iste perferendis ex vel itaque cupiditate.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit eius earum nesciunt quod voluptatum laboriosam magni dignissimos, expedita a. Iure nisi deleniti consequatur. Laboriosam iste perferendis ex vel itaque cupiditate.</p>
+            <p class="sticky">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit eius earum nesciunt quod voluptatum laboriosam magni dignissimos, expedita a. Iure nisi deleniti consequatur. Laboriosam iste perferendis ex vel itaque cupiditate.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit eius earum nesciunt quod voluptatum laboriosam magni dignissimos, expedita a. Iure nisi deleniti consequatur. Laboriosam iste perferendis ex vel itaque cupiditate.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit eius earum nesciunt quod voluptatum laboriosam magni dignissimos, expedita a. Iure nisi deleniti consequatur. Laboriosam iste perferendis ex vel itaque cupiditate.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit eius earum nesciunt quod voluptatum laboriosam magni dignissimos, expedita a. Iure nisi deleniti consequatur. Laboriosam iste perferendis ex vel itaque cupiditate.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit eius earum nesciunt quod voluptatum laboriosam magni dignissimos, expedita a. Iure nisi deleniti consequatur. Laboriosam iste perferendis ex vel itaque cupiditate.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit eius earum nesciunt quod voluptatum laboriosam magni dignissimos, expedita a. Iure nisi deleniti consequatur. Laboriosam iste perferendis ex vel itaque cupiditate.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit eius earum nesciunt quod voluptatum laboriosam magni dignissimos, expedita a. Iure nisi deleniti consequatur. Laboriosam iste perferendis ex vel itaque cupiditate.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit eius earum nesciunt quod voluptatum laboriosam magni dignissimos, expedita a. Iure nisi deleniti consequatur. Laboriosam iste perferendis ex vel itaque cupiditate.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit eius earum nesciunt quod voluptatum laboriosam magni dignissimos, expedita a. Iure nisi deleniti consequatur. Laboriosam iste perferendis ex vel itaque cupiditate.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit eius earum nesciunt quod voluptatum laboriosam magni dignissimos, expedita a. Iure nisi deleniti consequatur. Laboriosam iste perferendis ex vel itaque cupiditate.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit eius earum nesciunt quod voluptatum laboriosam magni dignissimos, expedita a. Iure nisi deleniti consequatur. Laboriosam iste perferendis ex vel itaque cupiditate.</p>
+        </div>
     </div>
     
 </body>
