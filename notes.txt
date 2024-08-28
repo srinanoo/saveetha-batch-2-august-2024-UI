@@ -296,3 +296,121 @@ Responsiveness
                 at least 3 - 4 child containers some containers are static and are relative and absolute
                     spacing + direction
                     direction
+
+
+28-08-2024
+
+Bootstrap
+    in CSS
+        property: value;
+            eg:
+                display: block;
+                justify-content: center;
+    in Bootstrap
+        "property-value" as class Names
+            eg:
+                "d-block"
+                "justify-content-center"
+    
+    Utilities
+        Spacing
+            padding
+                in CSS
+                    padding
+                    padding-top
+                    padding-right
+                    padding-bottom
+                    padding-left
+
+                in Bootstrap
+                    p
+                        p-0
+                    pt
+                        pt-0
+                    pe in v5+, pr in v4
+                    pb
+                    ps in v5+, pl in v4
+                    px (ps + pe)
+                    py (pt + pb)
+            margin
+                in CSS
+                    margin
+                    margin-top
+                    margin-right
+                    margin-bottom
+                    margin-left
+                in Bootstrap
+                    m
+                        m-0
+                        m-3 => margin: 16px
+                        m-1 => margin: 4px
+                    mt
+                    me in v5+, mr in v4
+                    mb
+                    ms in v5+, ml in v4
+                    mx (ms + me)
+                    my (mt + mb)
+        Spacers
+            rem = default measurement in Bootstrap
+                1 rem = 16px
+            0 = 0
+            1 = 0.25 rem = 4px
+            2 = 0.5rem = 8px
+            3 = 1 rem = 16px
+            4 = 1.5rem = 24px
+            5 = 3rem = 48px
+        
+        Sizing
+            in CSS
+                height
+                width
+            in Bootstrap
+                h
+                w
+                    0
+                        w-0
+                        h-0
+                    25
+                        w-25 => width: 25%
+                    50
+                        w-50 => width: 50%
+                    75
+                        w-75 => width: 75%
+                    100
+                        w-100 => width: 100%
+
+    Contextual Classes
+        primary
+        secondary
+        info
+        warning
+        success
+        danger
+        light
+        dark
+
+    Border
+        in CSS
+            border: 1px solid red;
+
+        in Bootstrap
+            border
+                border-0
+                border-1
+                border-2
+                border-3
+                border-4
+                border-5
+
+        in CSS
+            border-radius
+        in Bootstrap
+            rounded
+                rounded-0
+                rounded-1
+                rounded-2
+                rounded-3
+                rounded-4
+                rounded-5
+                rounded-pill
+                rounded-circle
