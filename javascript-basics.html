@@ -205,27 +205,136 @@
             //     console.log(temp, obj[temp]);
             // }
 
-            let users = [
-                {
-                    "id": 1,
-                    "name": "Name 1",
-                    "active": true,
-                },
-                {
-                    "id": 2,
-                    "name": "Name 2",
-                    "active": true,
-                },
-                {
-                    "id": 3,
-                    "name": "Name 3",
-                    "active": true,
-                }
-            ];
+            // let users = [
+            //     {
+            //         "id": 1,
+            //         "name": "Name 1",
+            //         "active": true,
+            //     },
+            //     {
+            //         "id": 2,
+            //         "name": "Name 2",
+            //         "active": true,
+            //     },
+            //     {
+            //         "id": 3,
+            //         "name": "Name 3",
+            //         "active": true,
+            //     }
+            // ];
             // id | name | active
             // 1 | Name 1 | true
             // 2 | Name 2 | true
             // 3 | Name 3 | true
+
+            // let ageOfPeople = [45, 18, 12, 15, 30, 50, 25, 12, 18, 20, 30, 50, 25, 12, 18, 20, 30, 50];
+            // let count = 0;
+            // for (let i = 0; i < ageOfPeople.length; i++) {
+                
+            //     if(ageOfPeople[i] >= 18 && count < 5) {
+            //         console.log(ageOfPeople[i]);
+            //         count++;
+            //     }
+            //     if(count === 5) {
+            //         break;
+            //     }
+            //     console.log("- i", i);
+            // }
+
+            // function
+                // regular
+                    // function testFunc(a=1, b=1) {
+                    //     // console.log("Function called...");
+                    //     // let a = 10 + 10;
+                    //     return a + b; // value or variable or expression
+                    // }
+                    // let result = testFunc();
+                    // console.log(result);
+                    // result = testFunc(10, 10);
+                    // console.log(result);
+                    // result = testFunc(10);
+                    // console.log(result);
+                    // result = testFunc(10);
+
+                // anonymous
+                //     let testFunc1 = function() {
+                //         console.log("Anonymous Function is called");
+                //     }
+                //     testFunc1();
+
+                //     let obj = {
+                //         id: 1,
+                //         getName: function() {
+                //             console.log("getName is called");
+                //         }
+                //     }
+                //     obj.getName();
+
+                // // arrow
+                //     let testFunc2 = a => "Arrow Function is called";
+                    
+                //     let res = testFunc2();
+                //     console.log(res);
+
+                // testFunc();
+                // function testFunc() {
+                //     console.log("Function is called");
+                // }
+
+                // let testFunc1 = () => console.log("Arrow Function is called");
+                // testFunc1();
+
+                // let arr = [1000, "Dinesh", true];
+                // console.time()
+                // for(let i = 0; i < arr.length; i++) {
+                //     console.log(arr[i]);
+                // }
+                // console.timeEnd();
+
+                // console.time();
+                // arr.forEach(processArray);
+                // function processArray(v) {
+                //     console.log(v);
+                // }
+                // console.timeEnd();
+
+                // arr.forEach(v => console.log(v));
+
+                // map
+                    // let arr = [1, 2, 3, 4, 5, 6];
+                    // let result = arr.map(v => Math.sqrt(v));
+                    // console.log(result);
+
+                // filter
+                    // let names = ["Dinesh", "Dilip", "Shivani", "Sumathy", "John"];
+                    // let result = [];
+                    // for(let i = 0; i < names.length; i++) {
+                    //     if(names[i][0] !== "D") {
+                    //         // console.log(names[i]);
+                    //         result.push(names[i]);
+                    //     }
+                    // }
+                    // console.log(result);
+
+                    // let results = names.filter(v => v[0] !== "D");
+                    // console.log(results);
+
+                // some
+                    let ageOfPeople = [45, 18, 12, 15, 30, 50, 25, 12, 18, 20, 30, 50, 25, 12, 18, 20, 30, 50];
+                    let flag = true;
+                    for(let i = 0; i < ageOfPeople.length; i++) {
+                        if(ageOfPeople[i] < 18) {
+                            flag = false;
+                            break;
+                        }
+                    }
+                    console.log(flag);
+
+                    let res = ageOfPeople.some(v => v >= 18);
+                    console.log(res);
+
+                    let res1 = ageOfPeople.every(v => v < 18);
+                    console.log(res1);
 
     </script>
     <noscript>Please enable JS...</noscript>
