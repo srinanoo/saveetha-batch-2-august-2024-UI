@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .redText {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="div1">
+        <h2 id="h2">Heading 2</h2>
+        <p id="p1">Paragraph 1</p>
+        <h3 id="h3">Heading 3</h3>
+        <div id="div2">Div Container</div>
+    </div>
+
+    <img src="images/background.jpeg" alt="" id="img1">
+
+    <!-- <button onclick="process();">Click</button> -->
+    <button id="btnClick">Click</button>
+
+    <script>
+        document.getElementById("btnClick").addEventListener("click", () => {
+            let div1 = document.getElementById("div1");
+            let p1 = document.getElementById("p1");
+            let h2 = document.getElementById("h2");
+            let h3 = document.getElementById("h3");
+            let div2 = document.getElementById("div2");
+            let img1 = document.getElementById("img1");
+
+            console.log(p1.innerHTML);
+
+            p1.setAttribute("class", "redText");
+
+            let p2 = document.createElement("p");
+            p2.innerText = "Paragraph 2";
+            p2.style.textAlign = "center";
+            div1.append(p2);
+
+            console.log(p2.getAttribute("style"));
+            p2.removeAttribute("style");
+
+            // let div3 = document.createElement("div");
+            // div3.innerHTML = "<iframe src='https://ndtv.com/' width='300' height='300'></iframe>";
+            // div1.prepend(div3);
+
+            let button = document.createElement("button");
+            button.innerHTML = "New Button";
+            button.setAttribute("type", "submit");
+            button.setAttribute("class", "redText");
+            // button.setAttribute("style", "background-color: yellow");
+            button.style.color = "black";
+            button.style.backgroundColor = "yellow";
+            button.addEventListener("click", () => {
+                console.log("New Button clicked...");
+            })
+
+            div1.insertBefore(button, h3);
+
+            img1.src = "./images/arrow2.png";
+        });
+        
+    </script>
+    
+</body>
+</html>
