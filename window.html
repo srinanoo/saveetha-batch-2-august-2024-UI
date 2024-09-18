@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <button id="btnClick">Click</button> -->
+
+    <div id="time"></div>
+    <button id="btnStart">Start</button>
+    <button id="btnStop">Stop</button>
+
+    <script>
+        let timer;
+        document.getElementById("btnStart").addEventListener("click", () => {
+            timer = setInterval(() => {
+                let dt = new Date();
+                document.getElementById("time").innerHTML = dt.toLocaleTimeString();
+            }, 1000);
+
+            // setTimeout(() => {
+            //     console.log("Timeout executed...");
+            // }, 5000);
+        });
+
+        document.getElementById("btnStop").addEventListener("click", () => {
+            clearInterval(timer);
+        })
+
+        // console.log(window.location);
+        // console.log(location);
+        // console.log(location.port);
+        // console.log(location.hostname);
+        // console.log(location.port);
+
+        // document.getElementById("btnClick").addEventListener("click", () => {
+            // location.href = "https://google.com/";
+            // location.reload();
+
+            // alert("This is an alert box");
+            // let conf = confirm("Are you sure you want to delete?");
+            // (conf)
+            //     ?
+            //         console.log(conf)
+            //     :
+            //         console.log(conf)
+            // let name = prompt("Enter the Name:");
+            // console.log(name);
+        // });
+
+        let dt = new Date();
+        console.log(dt);
+    </script>
+    
+</body>
+</html>
