@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <div id="fact"></div>
+    <button id="btnFact">Show Fact</button> -->
+
+    <input type="text" id="country"><br>
+    <button id="btnUniversities">Show Universities</button>
+
+    <div id="universities"></div>
+    
+    <script>
+        document.getElementById("btnUniversities").addEventListener("click", () => {
+            let country = document.getElementById("country").value || "India";
+
+            // if(country==="") country = "India";
+
+            let url = `http://universities.hipolabs.com/search?country=${country}`;
+            fetch(url)
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    let output = "";
+                    data.forEach(v => {
+                        output += `<p>${v.name}, ${v.web_pages[0]}</p>`;
+                    });
+                    document.getElementById("universities").innerHTML = output;
+                })
+        });
+
+        // document.getElementById("btnFact").addEventListener("click", () => {
+        //     fetch("https://catfact.ninja/fact")
+        //         .then(res => {
+        //             console.log(res);
+        //             // let output = res.json();
+        //             // console.log(output);
+        //             return res.json();
+        //         })
+        //         .then(data => {
+        //             console.log(data);
+        //             document.getElementById("fact").innerHTML = data.fact;
+        //         })
+        // });
+    </script>
+</body>
+</html>
