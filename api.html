@@ -16,6 +16,23 @@
     <div id="universities"></div>
     
     <script>
+
+        let arr = [1000, "dinesh", true];
+        console.log(arr[0], arr[1], arr[2]);
+
+        let [temp1, temp2, temp3] = arr;
+        console.log(temp1, temp2, temp3);
+
+        let obj = {
+            "id": 1,
+            "name": "Dinesh",
+            "active": true,
+        }
+        let {id, name, active} = obj;
+        console.log(id, name, active);
+
+
+
         document.getElementById("btnUniversities").addEventListener("click", () => {
             let country = document.getElementById("country").value || "India";
 
