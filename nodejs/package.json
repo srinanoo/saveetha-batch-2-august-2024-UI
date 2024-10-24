@@ -8,5 +8,10 @@
   "keywords": [],
   "author": "Dinesh",
   "license": "ISC",
-  "description": "My First Node Application"
+  "description": "My First Node Application",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1"
+  }
 }
