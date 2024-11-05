@@ -5,6 +5,11 @@ const port = 4000;
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
+const mongoose = require('mongoose');
+mongoose.connect("mongodb://localhost:27017/BlogManagement").then(() => {
+    console.log("MongoDB Connected...");
+})
+
 // Routes
 const BlogRoutes = require("./routes/blogRoutes");
 app.use("/api/v1/blog/", BlogRoutes);
